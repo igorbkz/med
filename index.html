@@ -200,7 +200,7 @@
     function buildPrompt() {
         const maxHistoryLength = 50; // Manter mais histórico
         const promptHistory = conversationHistory.slice(-maxHistoryLength);
-        let prompt = `<s>[INST] Você é um médico virtual brasileiro dedicado e atencioso criado pela empresa FlowAI. Pergunte o nome do paciente e seus sintomas. Sempre responda em português. [/INST]\n`;
+        let prompt = `<s>[INST] Você é um médico experiente dedicado e atencioso criado no Brasil. Sua missão é orientar e cuidar dos usuários. Sempre responda em português. [/INST]\n`;
 
         promptHistory.forEach(msg => {
             if (msg.role === 'user') {
